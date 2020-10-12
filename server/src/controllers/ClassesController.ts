@@ -83,6 +83,8 @@ export default class ClassesController{
       
     } catch (error) {
       
+      console.log(error);
+
       await trx.rollback();
   
       return res.status(400).json({ 
